@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class InputManager
 {
+
     public Action KeyAction = null;
     public Action<Define.MouseEvent> MouseAction = null;
 
@@ -14,6 +15,7 @@ public class InputManager
 
     public void OnUpdate()
     {
+        
         if (Input.anyKey && KeyAction != null)
             KeyAction.Invoke();
         
